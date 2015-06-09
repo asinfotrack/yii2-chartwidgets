@@ -14,4 +14,4 @@ The preferred way to install this extension is through [composer](http://getcomp
 ## Widgets
 
 ###### SolidGauge
-Renders a preconfigured Highcharts-SolidGauge
+Renders a preconfigured Highcharts-SolidGauge with a value and optional settings provided
