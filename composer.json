@@ -1,0 +1,37 @@
+{
+	"name": "asinfotrack/yii2-chartwidgets",
+	"type": "yii2-extension",
+	
+	"description": "Yii2-chartwidgets is a collection of widgets based on yii2-highcharts-widget extension by miloschuman",
+	"keywords": ["yii2", "chart", "widgets", "highcharts"],
+	
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Pascal Mueller",
+			"email": "pascal.mueller@asinfotrack.ch",
+			"homepage": "http://www.asinfotrack.ch"
+		}
+	],
+	
+	"minimum-stability": "stable",
+	"support": {
+		"source": "https://github.com/asinfotrack/yii2-chartwidgets",
+		"issues": "https://github.com/asinfotrack/yii2-chartwidgets/issues"
+	},
+	
+	"require": {
+		"php": ">=5.4.0",
+		
+		"yiisoft/yii2": "2.0.*",
+		"yiisoft/yii2-codeception": "~2.0.0",
+		
+        "miloschuman/yii2-highcharts-widget": "4.1.*"
+	},
+	
+	"autoload": {
+		"psr-4": {
+			"asinfotrack\\yii2\\chartwidgets": "widgets/"
+		}
+	}
+}
