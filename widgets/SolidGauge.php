@@ -1,6 +1,7 @@
 <?php
 namespace asinfotrack\yii2\chartwidgets;
 
+use Yii;
 use yii\base\InvalidConfigException;
 
 /**
@@ -10,7 +11,7 @@ use yii\base\InvalidConfigException;
  * @link http://www.asinfotrack.ch
  * @license MIT
  */
-class SolidGauge extends \asinfotrack\yii2\chartwidgets\ChartWidgetBase
+class SolidGauge extends \asinfotrack\yii2\chartwidgets\HighchartWidgetBase
 {
 	
 	/**
@@ -45,8 +46,7 @@ class SolidGauge extends \asinfotrack\yii2\chartwidgets\ChartWidgetBase
 	public $dataLabel = '<div class="text-center">{value}</div>';
 	
 	/**
-	 * (non-PHPdoc)
-	 * @see \yii\base\Object::init()
+	 * @inheritdoc
 	 */
 	public function init()
 	{
@@ -59,8 +59,7 @@ class SolidGauge extends \asinfotrack\yii2\chartwidgets\ChartWidgetBase
 	}
 	
 	/**
-	 * (non-PHPdoc)
-	 * @see \asinfotrack\yii2\chartwidgets\ChartWidgetBase::scripts()
+	 * @inheritdoc
 	 */
 	protected function scripts()
 	{
@@ -68,8 +67,7 @@ class SolidGauge extends \asinfotrack\yii2\chartwidgets\ChartWidgetBase
 	}
 	
 	/**
-	 * (non-PHPdoc)
-	 * @see \asinfotrack\yii2\chartwidgets\ChartWidgetBase::createChartConfig()
+	 * @inheritdoc
 	 */
 	protected function createChartConfig()
 	{

@@ -2,7 +2,7 @@
 	"name": "asinfotrack/yii2-chartwidgets",
 	"type": "yii2-extension",
 	
-	"description": "Yii2-chartwidgets is a collection of widgets based on yii2-highcharts extension by miloschuman",
+	"description": "Yii2-chartwidgets is a collection of widgets based on yii2-highcharts extension by miloschuman and jquery-sparkline",
 	"keywords": ["yii2", "chart", "widgets", "highcharts"],
 	
 	"license": "MIT",

@@ -1,6 +1,7 @@
 <?php
 namespace asinfotrack\yii2\chartwidgets;
 
+use Yii;
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
 use miloschuman\highcharts\Highcharts;
@@ -14,11 +15,11 @@ use miloschuman\highcharts\Highcharts;
  * @link http://www.asinfotrack.ch
  * @license MIT
  */
-abstract class ChartWidgetBase extends \yii\base\Widget
+abstract class HighchartWidgetBase extends \yii\base\Widget
 {
 	
 	/**
-	 * @var array holds the actual config ofthe widget.
+	 * @var array holds the actual config of the widget.
 	 */
 	protected $widgetConfig = [];
 	
@@ -43,8 +44,7 @@ abstract class ChartWidgetBase extends \yii\base\Widget
 	public $borderWidth = 0;
 	
 	/**
-	 * (non-PHPdoc)
-	 * @see \yii\base\Object::init()
+	 * @inheritdoc
 	 */
 	public function init()
 	{
@@ -79,8 +79,7 @@ abstract class ChartWidgetBase extends \yii\base\Widget
 	}
 	
 	/**
-	 * (non-PHPdoc)
-	 * @see \yii\base\Widget::run()
+	 * @inheritdoc
 	 */
 	public function run()
 	{
