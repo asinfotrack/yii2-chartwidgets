@@ -1,5 +1,5 @@
 <?php
-namespace asinfotrack\yii2\chartwidgets;
+namespace asinfotrack\yii2\chartwidgets\widgets;
 
 use Yii;
 use yii\base\InvalidConfigException;

@@ -1,5 +1,5 @@
 <?php
-namespace asinfotrack\yii2\chartwidgets;
+namespace asinfotrack\yii2\chartwidgets\widgets;
 
 use asinfotrack\yii2\chartwidgets\assets\SparklineAsset;
 use yii\helpers\ArrayHelper;

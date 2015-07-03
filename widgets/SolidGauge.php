@@ -1,5 +1,5 @@
 <?php
-namespace asinfotrack\yii2\chartwidgets;
+namespace asinfotrack\yii2\chartwidgets\widgets;
 
 use Yii;
 use yii\base\InvalidConfigException;
@@ -11,7 +11,7 @@ use yii\base\InvalidConfigException;
  * @link http://www.asinfotrack.ch
  * @license MIT
  */
-class SolidGauge extends \asinfotrack\yii2\chartwidgets\HighchartWidgetBase
+class SolidGauge extends \asinfotrack\yii2\chartwidgets\widgets\HighchartWidgetBase
 {
 	
 	/**

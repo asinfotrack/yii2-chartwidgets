@@ -31,7 +31,7 @@
 	
 	"autoload": {
 		"psr-4": {
-			"asinfotrack\\yii2\\chartwidgets\\": "widgets/"
+			"asinfotrack\\yii2\\chartwidgets\\": ""
 		}
 	}
 }
