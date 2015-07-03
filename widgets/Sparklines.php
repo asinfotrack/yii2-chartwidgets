@@ -1,10 +1,12 @@
 <?php
 namespace asinfotrack\yii2\chartwidgets\widgets;
 
-use asinfotrack\yii2\chartwidgets\assets\SparklineAsset;
+use Yii;
+use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Json;
+use asinfotrack\yii2\chartwidgets\assets\SparklineAsset;
 
 /**
  * Renders a sparklines widget.
@@ -56,6 +58,20 @@ class Sparklines extends \yii\base\Widget
 	 * @see http://omnipotent.net/jquery.sparkline/#s-docs
 	 */
 	public $sparklineConfig = [];
+
+	/**
+	 * @inheritdoc
+	 */
+	public function init()
+	{
+		parent::init();
+
+		//assert there are values
+		if ($this->values === null) {
+			$msg = Yii::t('app', 'There are no values defined!');
+			throw new InvalidConfigException($msg);
+		}
+	}
 
 	/**
 	 * @inheritdoc

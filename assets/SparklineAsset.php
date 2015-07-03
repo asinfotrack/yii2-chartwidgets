@@ -11,7 +11,7 @@ namespace asinfotrack\yii2\chartwidgets\assets;
 class SparklineAsset extends \yii\web\AssetBundle
 {
 
-	public $sourcePath = '@vendor/asinfotrack/yii2/chartwidgets/assets/src';
+	public $sourcePath = '@vendor/asinfotrack/yii2-chartwidgets/assets/src';
 
 	public $js = [
 		'jquery.sparkline.min.js',
