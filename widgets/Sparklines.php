@@ -100,9 +100,11 @@ class Sparklines extends \yii\base\Widget
 		//prepare config
 		$config = [
 			'type'=>$this->type,
-			'width'=>$this->width,
 			'height'=>$this->height,
 		];
+		if ($this->type !== self::SPARKLINE_BAR) {
+			$config['width'] = $this->width;
+		}
 		$config = Json::encode(ArrayHelper::merge($this->sparklineConfig, $config));
 
 		//create and register js
