@@ -44,7 +44,17 @@ class SolidGauge extends \asinfotrack\yii2\chartwidgets\HighchartWidgetBase
 	 * as a placeholder for the actual value
 	 */
 	public $dataLabel = '<div class="text-center">{value}</div>';
-	
+
+	/**
+	 * @var integer[] the charts spacing (similar to css-padding)
+	 */
+	public $spacing = [2, 0, -40, 0];
+
+	/**
+	 * @var int the charts border width
+	 */
+	public $borderWidth = 0;
+
 	/**
 	 * @inheritdoc
 	 */
@@ -74,6 +84,9 @@ class SolidGauge extends \asinfotrack\yii2\chartwidgets\HighchartWidgetBase
 		return [
 			'chart'=>[
 				'type'=>'solidgauge',
+				'height'=>$this->height,
+				'borderWidth'=>$this->borderWidth,
+				'spacing'=>$this->spacing,
 			],
 			'tooltip'=>['enabled'=>false],
 			'legend'=>['enabled'=>false],
