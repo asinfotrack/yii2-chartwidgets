@@ -84,6 +84,7 @@ abstract class HighchartWidgetBase extends \yii\base\Widget
 	public function run()
 	{
 		return Highcharts::widget([
+			'htmlOptions'=>['id'=>$this->id],
 			'scripts'=>$this->scripts(),
 			'options'=>$this->widgetConfig,
 		]);
